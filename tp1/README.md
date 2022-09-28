@@ -486,4 +486,4 @@ Si deux ordinateurs reliés physiquement possèdent une adresse IP dans le même
 
 🌞 Ce soleil est un troll. **Lisez et prenez le temps d'appréhender le texte de conclusion juste au dessus si ces notions ne vous sont pas familières.** Done
 
-![](https://tenor.com/view/partying-cat-party-cat-cute-cat-kitten-gif-22225605)
+![](https://c.tenor.com/_4nl1Qq1RKcAAAAd/partying-cat-party.gif)
