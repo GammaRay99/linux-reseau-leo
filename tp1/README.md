@@ -485,3 +485,5 @@ Si deux ordinateurs reliés physiquement possèdent une adresse IP dans le même
   - **chez vous, c'est votre Box qui fait les trois :)**
 
 🌞 Ce soleil est un troll. **Lisez et prenez le temps d'appréhender le texte de conclusion juste au dessus si ces notions ne vous sont pas familières.** Done
+
+![](https://tenor.com/view/partying-cat-party-cat-cute-cat-kitten-gif-22225605)
