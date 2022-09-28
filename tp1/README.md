@@ -183,17 +183,17 @@ Cette étape peut paraître cruciale. En réalité, elle n'existe pas à proprem
 
 🌞Si vos PCs ont un port RJ45 alors y'a une carte réseau Ethernet associée :
 ```
-$ ping 192.168.0.2
-PING 192.168.0.2 (192.168.0.2) 56(84) bytes of data.
-64 bytes from 192.168.0.2: icmp_seq=1 ttl=64 time=0.481 ms
-64 bytes from 192.168.0.2: icmp_seq=2 ttl=64 time=0.930 ms
-64 bytes from 192.168.0.2: icmp_seq=3 ttl=64 time=1.30 ms
-64 bytes from 192.168.0.2: icmp_seq=4 ttl=64 time=0.638 ms
+$ ping 10.42.0.2
+PING 10.42.0.2 (10.42.0.2) 56(84) bytes of data.
+64 bytes from 10.42.0.2: icmp_seq=1 ttl=64 time=0.481 ms
+64 bytes from 10.42.0.2: icmp_seq=2 ttl=64 time=0.930 ms
+64 bytes from 10.42.0.2: icmp_seq=3 ttl=64 time=1.30 ms
+64 bytes from 10.42.0.2: icmp_seq=4 ttl=64 time=0.638 ms
 ``` 
 ```
 $ ip n
 10.33.19.254 dev wlp0s20f3 lladdr 00:c0:e7:e0:04:4e REACHABLE 
-192.168.0.2 dev enp8s0 lladdr a0:ce:c8:ee:d4:14 STALE 
+10.42.0.2 dev enp8s0 lladdr a0:ce:c8:ee:d4:14 STALE 
 ```
 
 ## 4. Utilisation d'un des deux comme gateway
@@ -455,7 +455,7 @@ hello
 ![](./img/nc_wireshark.png)
 
 DNS:
-![](./img.dns_wireshark.png)
+![](./img/dns_wireshark.png)
 # Bilan
 
 **Vu pendant le TP :**
