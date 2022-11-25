@@ -78,24 +78,10 @@ Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /
 🌞 **Conteneurisez votre application**
 
 ```
-[user@docker last_step]$ cat Dockerfile | grep clone
-RUN git -C /srv/server clone https://github.com/GammaRay99/web_server.git
-
-[user@docker last_step]$ ls
-docker-compose.yml  Dockerfile
-
-[user@docker last_step]$ docker build . -t server
-  [...]
-Successfully tagged server:latest
-
-[user@docker last_step]$ docker compose up
-[+] Running 1/0
- ⠿ Container last_step-web_server-1  Created                                                                                                                                             0.0s
-Attaching to last_step-web_server-1
-
- ╭─gammray@manjaro in repo: linux-reseau-leo/linux/tp4 on  main [?] 
- ╰─λ curl http://10.104.1.2/
-1 counters   
+$ git clone https://github.com/GammaRay99/linux-reseau-leo.git
+$ cd linux-reseau-leo/linux/tp4/app
+$ docker build . -t server
+$ docker compose up -d
 ```
 
 📁 📁 [`app/Dockerfile`](./app/Dockerfile) et [`app/docker-compose.yml`](./app/docker-compose.yml). Je veux un sous-dossier `app/` sur votre dépôt git avec ces deux fichiers dedans :)
